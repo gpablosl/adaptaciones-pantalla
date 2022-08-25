@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,86 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="adaptaciones_pantalla" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="sqN-CE-IsV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="spiderman" translatesAutoresizingMaskIntoConstraints="NO" id="3H2-mT-Sra">
+                                        <rect key="frame" x="0.0" y="-14" width="414" height="351"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="azy-lc-sbg">
+                                        <rect key="frame" x="10" y="437" width="393" height="54"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfU-Uj-HlL">
+                                                <rect key="frame" x="159" y="12" width="76" height="30"/>
+                                                <state key="normal" title="Reproducir">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="Z1u-AT-23f">
+                                                <rect key="frame" x="71" y="7" width="40" height="40"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.33058651290000002" green="0.41160030559999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Z1u-AT-23f" firstAttribute="centerY" secondItem="qfU-Uj-HlL" secondAttribute="centerY" id="2hm-ic-fTN"/>
+                                            <constraint firstItem="Z1u-AT-23f" firstAttribute="height" secondItem="azy-lc-sbg" secondAttribute="height" id="3tm-cD-wM5"/>
+                                            <constraint firstItem="qfU-Uj-HlL" firstAttribute="centerY" secondItem="azy-lc-sbg" secondAttribute="centerY" id="8xU-QV-AIG"/>
+                                            <constraint firstItem="qfU-Uj-HlL" firstAttribute="centerX" secondItem="azy-lc-sbg" secondAttribute="centerX" id="c0V-ji-DOD"/>
+                                            <constraint firstItem="Z1u-AT-23f" firstAttribute="width" secondItem="azy-lc-sbg" secondAttribute="width" id="hSu-GH-J2I"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5AX-rA-6vg">
+                                        <rect key="frame" x="10" y="499" width="219" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8YC-7A-Vk0">
+                                        <rect key="frame" x="295" y="499" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nWd-z0-yGK">
+                                        <rect key="frame" x="353" y="499" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Csz-5Z-xyg">
+                                        <rect key="frame" x="237" y="499" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="azy-lc-sbg" firstAttribute="leading" secondItem="sqN-CE-IsV" secondAttribute="leading" constant="10" id="1Sj-aX-Ey0"/>
+                                    <constraint firstItem="3H2-mT-Sra" firstAttribute="centerX" secondItem="sqN-CE-IsV" secondAttribute="centerX" id="DiG-Zr-mL6"/>
+                                    <constraint firstItem="3H2-mT-Sra" firstAttribute="width" secondItem="sqN-CE-IsV" secondAttribute="width" id="W8j-f7-aDx"/>
+                                    <constraint firstAttribute="trailing" secondItem="azy-lc-sbg" secondAttribute="trailing" constant="10" id="a07-jJ-O8R"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sqN-CE-IsV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XG0-hh-e2G"/>
+                            <constraint firstItem="sqN-CE-IsV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="a0r-07-LeK"/>
+                            <constraint firstAttribute="bottom" secondItem="sqN-CE-IsV" secondAttribute="bottom" id="mqi-Oy-p2o"/>
+                            <constraint firstItem="sqN-CE-IsV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="n4Y-TR-CMy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.637681159420293" y="34.239130434782609"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="play" width="100" height="100"/>
+        <image name="spiderman" width="252" height="351"/>
+    </resources>
 </document>
